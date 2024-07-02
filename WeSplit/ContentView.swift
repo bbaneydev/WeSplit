@@ -52,6 +52,7 @@ struct ContentView: View {
                         ForEach(0..<101, id: \.self) {
                             Text($0, format: .percent)
                         }
+                        .foregroundStyle(tipPercentage == 0 ? .red : .gray)
                     }
                     .pickerStyle(.navigationLink)
                 }
